@@ -13,3 +13,11 @@ barrier: barrier.cpp
 	g++ barrier.cpp -o barrier -Wall -std=c++20 -lpthread
 clean:
 	rm -f mutex-test helloWorld-c helloWorld-cpp threads threads-c11 barrier
+check:
+	./helloWorld-c
+	./helloWorld-cpp
+	./mutex-test
+	./threads
+	./threads-c11
+	./barrier
+discheck: clean
